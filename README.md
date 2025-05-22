@@ -45,19 +45,33 @@ Este repositório documenta os principais conceitos, práticas e ferramentas abo
 ### 5. Computação em Nuvem com Azure
 
 - **Modelos de Serviço:** Exploração detalhada dos modelos IaaS (Infraestrutura como Serviço), PaaS (Plataforma como Serviço) e SaaS (Software como Serviço) e seus casos de uso ideais.
-- **Azure Virtual Machines:** Provisionamento rápido e seguro de VMs no Azure via portal, configurando sistema operacional, tamanho, rede e regras de acesso, conforme [documentação oficial](https://learn.microsoft.com/pt-br/azure/virtual-machines/windows/quick-create-portal).
 
-  - **Configuração da VM:**
-    - Escolha da imagem (Windows Server, Linux)
-    - Tamanho da instância (CPU, RAM)
-    - Credenciais e autenticação segura
-    - Definição de regras de firewall e portas abertas (RDP, SSH, HTTP/HTTPS)
+- **Provisionamento de Máquinas Virtuais (VMs):**
+  - Criação rápida de VMs no Azure via portal.
+  - Escolha de imagens (Windows Server, Linux), tamanhos (CPU, RAM) e configurações de rede.
+  - Gerenciamento seguro de credenciais, regras de firewall e acesso remoto (RDP, SSH).
   
-  - **Acesso Remoto:** Conexão via RDP ou SSH para gerenciamento direto da VM.
+- **Azure SQL Managed Instance: Banco de Dados Gerenciado para Aplicações Empresariais**
+
+  O **Azure SQL Managed Instance** é uma solução PaaS que oferece compatibilidade total com o SQL Server, combinando a facilidade de um banco de dados gerenciado com funcionalidades completas para aplicações corporativas. A criação rápida pelo portal Azure permite:
+
+  - **Configuração Simplificada:** Seleção da assinatura, grupo de recursos e região para hospedar a instância.
+  - **Capacidade Personalizada:** Definição do tamanho da instância baseada em vCores e armazenamento escalável para atender demandas variáveis.
+  - **Rede Virtual Integrada:** Implantação dentro de uma VNet (Virtual Network), garantindo isolamento, segurança e conectividade privada com aplicações.
+  - **Alta Disponibilidade e Backup Automatizado:** SLA de até 99,99%, com backups automatizados e recuperação point-in-time.
+  - **Gerenciamento Simplificado:** Atualizações, patches e monitoramento automáticos, eliminando a complexidade operacional da administração de bancos de dados.
   
-- **Azure App Service e Functions:** Implantação de aplicações web e funções serverless, permitindo escalabilidade automática e integração com outros serviços Azure.
-- **Gerenciamento de Identidade:** Uso do Azure Active Directory para controle de acesso granular e autenticação multifator.
-- **Segurança e Compliance:** Ferramentas integradas para monitoramento de segurança, prevenção contra ameaças e auditoria de conformidade regulatória.
+  > **Fluxo de criação rápido no portal Azure:**  
+  > 1. Acesse o portal Azure e escolha "Criar recurso" > "Banco de Dados" > "Instância Gerenciada do SQL".  
+  > 2. Configure a assinatura, grupo de recursos, nome da instância e região.  
+  > 3. Escolha o tamanho (vCores, memória, armazenamento).  
+  > 4. Configure a rede virtual para isolamento seguro.  
+  > 5. Configure opções adicionais, como backup e monitoramento.  
+  > 6. Revise e crie a instância.  
+
+- **Azure App Service e Azure Functions:** Implantação simplificada de aplicações web e funções serverless, com escalonamento automático, integração contínua e monitoramento nativo.
+
+- **Gerenciamento de Identidade e Segurança:** Uso do Azure Active Directory (AAD) para autenticação centralizada e controle de acesso, além de práticas para proteger dados em trânsito e em repouso.
 
 ---
 
@@ -66,5 +80,5 @@ Este repositório documenta os principais conceitos, práticas e ferramentas abo
 - Design e implementação de APIs RESTful robustas e seguras com Java e Spring Boot.
 - Arquitetura e operação de microsserviços distribuídos com alta disponibilidade e resiliência.
 - Automação completa do ciclo de vida de software via pipelines CI/CD em GitHub Actions.
-- Implantação e gerenciamento de recursos em nuvem pública (Microsoft Azure), incluindo VMs, serviços PaaS e segurança.
+- Implantação e gerenciamento de recursos em nuvem pública (Microsoft Azure), incluindo VMs, bancos gerenciados e serviços PaaS.
 - Práticas avançadas de monitoramento, logging e troubleshooting em ambientes produtivos.
