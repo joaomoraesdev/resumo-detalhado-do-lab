@@ -1,0 +1,1 @@
+# resumo-detalhado-do-lab
